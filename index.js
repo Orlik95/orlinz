@@ -707,6 +707,6 @@ app.get("/inw/:id", function(req, res){
 
 app.listen(process.env.PORT || 8080, () => {
 
-    console.log("Uruchomiono serwer pod adresem http://localhost:8080/");
+    console.log("Uruchomiono serwer");
 
 });
