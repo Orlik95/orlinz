@@ -1,0 +1,62 @@
+<script>
+    function cancelRW(){
+
+        $.ajax({
+            url: window.location.href + "/cancel",
+            type: 'put',
+            dataType: 'JSON'
+        });
+    }
+
+    function confirmRW(){
+
+        $.ajax({
+            url: window.location.href + "/confirm",
+            type: 'put',
+            dataType: 'JSON'
+        });
+    }
+
+    function deleteRW(){
+
+        $.ajax({
+            url: window.location.href,
+            type: 'delete',
+            dataType: 'JSON'
+        });
+    }
+</script>
+
+<style>
+    tr{
+        cursor: default
+    }
+</style>
+
+{{#each data}}
+    {{#if status}}Status dokumentu: {{status}}{{/if}}
+
+    <table style="width:100%">
+
+        {{#each items}}
+            <tr>
+                <td>{{nazwa}}</td>
+                <td>{{value}}</td>
+            </tr>
+        {{/each}}
+
+    </table>
+
+
+    {{#ifvalue status value="created"}}
+        <button onClick="confirmRW()">Zatwierdź dokument</button>
+        <button onClick="alert('TO DO: widok edycji dokumentu')">Edytuj dokument</button>
+        <button onClick="deleteRW()">Usuń dokument</button>
+    {{/ifvalue}}
+
+    {{#ifvalue status value="accepted"}}
+        <button onClick="cancelRW()">Cofnij zatwierdzenie dokumentu</button>
+    {{/ifvalue}}
+
+
+{{/each}}

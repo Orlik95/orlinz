@@ -1,0 +1,31 @@
+<script>
+    function redirect(link){
+        window.location.href = link;
+    }
+</script>
+
+<table style="width:100%">
+
+
+    <tr class="tableTopbar">
+        <td>Nazwa artykułu</td>
+        <td>Stan magazynowy</td>
+        <td>W przygotowaniu</td>
+        <td>Nadchodzące</td>
+        <td>Komentarz</td>
+
+    </tr>
+
+    {{#each inventory}}
+        <tr onclick="redirect('/inventory/{{item_id}}')">
+            <td>{{name}}</td>
+            <td>{{availability}}</td>
+            <td>{{pending}}</td>
+            <td>{{incoming}}</td>
+            <td>{{comment}}</td>
+        </tr>
+    {{/each}}
+
+</table>
+
+<button onClick="redirect('/inventory/add')">Dodaj nowy artykuł</button>

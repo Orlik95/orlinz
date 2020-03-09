@@ -1,0 +1,70 @@
+<script>
+
+    var counter = 0;
+
+
+    function addPosition(){
+
+        counter++;
+
+
+        var nodeName = document.createElement("input");
+        nodeName.setAttribute("type","text");
+        nodeName.setAttribute("id","name" + counter);
+        nodeName.setAttribute("placeholder","Nazwa artykułu");
+        nodeName.setAttribute("style","margin-right: 1px");
+        document.getElementById("content").appendChild(nodeName);
+
+        var nodeValue = document.createElement("input");
+        nodeValue.setAttribute("type","number");
+        nodeValue.setAttribute("id","value" + counter);
+        nodeValue.setAttribute("placeholder","Ilość na rozchód");
+        document.getElementById("content").appendChild(nodeValue);
+
+        document.getElementById("content").appendChild(document.createElement("br"));
+
+    }
+
+    function sendData(status){
+
+        var array = [];
+        for(var i=1; i<=counter; i++){
+            array.push(
+                    {
+                        name: document.getElementById("name" + i).value,
+                        value: document.getElementById("value" + i).value
+                    }
+            );
+        }
+
+        $.ajax({
+            url: window.location.href,
+            type: 'post',
+            data: {
+                array: array,
+                status: status
+            },
+            dataType: 'JSON'
+        });
+    }
+
+
+</script>
+
+<form id="content">
+
+    <p>Treść dokumentu RW:</p>
+
+</form>
+
+
+<br>
+
+<button onClick="addPosition()">+</button>
+
+<br><br>
+
+<button onClick="sendData('created')">Zapisz</button>
+
+<button onClick="sendData('accepted')">Zapisz i zatwierdź</button>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Łukasz Orlicki - praca inżynierska</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="/js/jquery.js"></script>
+</head>
+
+<script>
+
+    /*function replace(){
+        document.body.innerHTML = document.body.innerHTML.replace(/created/g, '<span class="unapproved">Niezatwierdzony</span>');
+        document.body.innerHTML = document.body.innerHTML.replace(/sent/g, '<span class="approved">Zatwierdzony</span>');
+        document.body.innerHTML = document.body.innerHTML.replace(/received/g, '<span class="approved">Zatwierdzony</span>');
+        document.body.innerHTML = document.body.innerHTML.replace(/accepted/g, '<span class="approved">Zatwierdzony</span>');
+    }*/
+
+</script>
+
+<body onload="replace()">
+
+
+<nav>
+
+    {{#if name}}
+        <p style="margin-bottom: 40px">Aktywny magazyn: {{name}}</p>
+        <div><a href="/">Zmień magazyn</a></div>
+    {{/if}}
+
+    <div><a href="/inventory">Artykuły</a></div>
+    <div><a href="/wz">Dokumenty WZ</a></div>
+    <div><a href="/pz">Dokumenty PZ</a></div>
+    <div><a href="/rw">Dokumenty RW</a></div>
+    <div><a href="/inw">Dokumenty INW</a></div>
+
+    </div>
+
+
+</nav>
+
+<div id="main">
+    {{{ body }}}
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<script>
+    function redirect(link){
+        window.location.href = link;
+    }
+</script>
+
+<table style="width:100%">
+
+    <tr class="tableTopbar">
+        <td>Data</td>
+        <td>Numer dokumentu</td>
+        <td>Dostawca</td>
+        <td>Status</td>
+
+    </tr>
+
+    {{#each pz}}
+        <tr onclick="redirect('/pz/{{_id}}')">
+            <td>{{day}}.{{month}}.{{year}}</td>
+            <td>{{number}}</td>
+            <td>{{sender}}</td>
+            <td>{{status}}</td>
+
+        </tr>
+    {{/each}}
+
+</table>
+<br>
+<button onClick="redirect('/pz/add')">Dodaj nowy dokument</button>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c2037b91-52d9-4141-8d62-7423e0835efe" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YZacpqDBIkVbCu9zbjFwaxS7DZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/own_modules" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\praca_inz\public\js" />
+      <recent name="E:\praca_inz\public" />
+      <recent name="E:\praca_inz\views\layouts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\praca_inz\own_modules" />
+      <recent name="E:\praca_inz\views" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2037b91-52d9-4141-8d62-7423e0835efe" name="Default" comment="" />
+      <created>1567510657594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567510657594</updated>
+      <workItem from="1567510662662" duration="4397000" />
+      <workItem from="1567516191753" duration="1275000" />
+      <workItem from="1567687670493" duration="5600000" />
+      <workItem from="1567772975332" duration="8031000" />
+      <workItem from="1568035856677" duration="7464000" />
+      <workItem from="1568110810340" duration="26542000" />
+      <workItem from="1568310497509" duration="7547000" />
+      <workItem from="1568635214998" duration="17277000" />
+      <workItem from="1568732202636" duration="6208000" />
+      <workItem from="1568906696198" duration="3624000" />
+      <workItem from="1581578375297" duration="1901000" />
+      <workItem from="1581583423803" duration="171000" />
+      <workItem from="1582010552673" duration="3259000" />
+      <workItem from="1582116206558" duration="4895000" />
+      <workItem from="1582296003757" duration="1554000" />
+      <workItem from="1582302494791" duration="1132000" />
+      <workItem from="1582548279622" duration="3933000" />
+      <workItem from="1583152658186" duration="2863000" />
+      <workItem from="1583377800782" duration="2691000" />
+      <workItem from="1583542507615" duration="4919000" />
+      <workItem from="1583737587182" duration="163000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="383" y="230" width="670" height="58" key="search.everywhere.popup" timestamp="1583545859794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="383" y="230" width="670" height="58" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583545859794" />
+  </component>
+</project>

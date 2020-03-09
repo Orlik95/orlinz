@@ -1,0 +1,32 @@
+
+<script>
+    function setWarehouse(name, link) {
+
+        console.log("name: " + name);
+        console.log("link: " + link);
+
+        var http = new XMLHttpRequest();
+        var url = window.location.href;
+        http.open('POST', url, true);
+
+        http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+        http.send(`name=${name}&link=${link}`);
+        location.reload();
+
+    }
+
+</script>
+
+
+
+<div style="margin: 20px">
+
+    <p>Wybierz magazyn: </p>
+
+    {{#each warehouses}}
+        <button onClick='setWarehouse("{{name}}", "{{link}}")' class="warehouse_btn">{{name}}</button>
+
+    {{/each}}
+
+</div>

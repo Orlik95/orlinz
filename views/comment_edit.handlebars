@@ -1,0 +1,19 @@
+<script>
+    function editComment(comment) {
+        var http = new XMLHttpRequest();
+        var url = window.location.href;
+        http.open('POST', url, true);
+
+        http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+        http.send(`comment=${comment}`);
+        window.location.href = "/inventory";
+
+
+    }
+
+</script>
+
+<textarea id="comment"></textarea>
+<br>
+<button onClick="editComment(document.getElementById('comment').value)">Edytuj komentarz</button>

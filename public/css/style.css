@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+
+}
+
+nav{
+    width: 15%;
+    background: #545454;
+    float: left;
+    position: fixed;
+    color: white;
+    height: 100%;
+
+
+}
+
+#main{
+    float: left;
+    width: 84%;
+    margin-left: 16%;
+}
+
+a, a:visited{
+    color: #fff;
+    text-decoration:none;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tr{
+    cursor: pointer;
+    text-align: center;
+}
+
+.tableTopbar{
+    cursor: default;
+    font-weight: bold;
+    border-bottom: 1px black solid;
+}
+
+tr:hover{
+    background: #d9d9d9;
+}
+
+.tableTopbar:hover{
+    background: #fff;
+}
+
+nav p{
+    text-align: center;
+}
+
+nav div{
+    margin-left: 30px;
+}
+
+button{
+    cursor: pointer
+}
+
+.warehouse_btn{
+    min-width: 50px;
+    height: 50px;
+}
+
+.unapproved{
+    color: red
+}
+
+.approved{
+    color: #00b400
+}

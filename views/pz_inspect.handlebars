@@ -1,0 +1,59 @@
+<script>
+    function cancelPZ(){
+
+        $.ajax({
+            url: window.location.href + "/cancel",
+            type: 'put',
+            dataType: 'JSON'
+        });
+    }
+
+    function confirmPZ(){
+
+        $.ajax({
+            url: window.location.href + "/confirm",
+            type: 'put',
+            dataType: 'JSON'
+        });
+    }
+
+    function deletePZ(){
+
+        $.ajax({
+            url: window.location.href,
+            type: 'delete',
+            dataType: 'JSON'
+        });
+    }
+</script>
+
+<style>
+    tr{
+        cursor: default
+    }
+</style>
+
+<table style="width:100%">
+    {{#each data}}
+        {{#if status}}Status dokumentu: {{status}}{{/if}}
+        {{#each items}}
+        <tr>
+                <td>{{nazwa}}</td>
+                <td>{{value}}</td>
+        </tr>
+        {{/each}}
+
+</table>
+        {{#ifvalue status value="created"}}
+            <button onClick="confirmPZ()">Zatwierdź dokument</button>
+            <button onClick="alert('TO DO: widok edycji dokumentu')">Edytuj dokument</button>
+            <button onClick="deletePZ()">Usuń dokument</button>
+        {{/ifvalue}}
+
+        {{#ifvalue status value="received"}}
+            <button onClick="cancelPZ()">Cofnij zatwierdzenie dokumentu</button>
+        {{/ifvalue}}
+    {{/each}}
+
+
+

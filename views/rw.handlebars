@@ -1,0 +1,25 @@
+<script>
+    function redirect(link){
+        window.location.href = link;
+    }
+</script>
+
+<table style="width:100%">
+
+    <tr class="tableTopbar">
+        <td>Data</td>
+        <td>Numer dokumentu</td>
+        <td>Status</td>
+    </tr>
+
+    {{#each rw}}
+        <tr onclick="redirect('/rw/{{_id}}')">
+            <td>{{day}}.{{month}}.{{year}}</td>
+            <td>{{number}}</td>
+            <td>{{status}}</td>
+        </tr>
+    {{/each}}
+
+</table>
+<br>
+<button onClick="redirect('/rw/add')">Dodaj nowy dokument</button>

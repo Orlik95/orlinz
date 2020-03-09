@@ -1,0 +1,22 @@
+<script>
+
+    function addItem(){
+
+        $.ajax({
+            url: window.location.href,
+            type: 'post',
+            data: {
+                itemName: document.getElementById("itemName").value,
+            },
+            dataType: 'JSON'
+        });
+
+    }
+
+
+</script>
+
+Podaj nazwę artykułu <br>
+<input type="text" id="itemName">
+<br><br>
+<button onClick="addItem()">Dodaj artykuł</button>

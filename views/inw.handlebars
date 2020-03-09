@@ -1,0 +1,29 @@
+<script>
+    function redirect(link){
+        window.location.href = link;
+    }
+</script>
+
+<table style="width:100%">
+
+    <tr class="tableTopbar">
+        <td>Data</td>
+        <td>Numer dokumentu</td>
+        <td>Typ inwentaryzacji</td>
+        <td>Status</td>
+
+    </tr>
+
+    {{#each inw}}
+        <tr onclick="redirect('/inw/{{_id}}')">
+            <td>{{day}}.{{month}}.{{year}}</td>
+            <td>{{number}}</td>
+            <td>{{full}}</td>
+            <td>{{status}}</td>
+
+        </tr>
+    {{/each}}
+
+</table>
+<br>
+<button onClick="redirect('/inw/add')">Dodaj nowy dokument</button>
